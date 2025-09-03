@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Music 1.wav-1ee6efa7e35cb0a64e9e444e3c12d134.sample"
+
+[deps]
+
+source_file="res://Resources F1001B - ICT/Sounds/Music 1.wav"
+dest_files=[ "res://.import/Music 1.wav-1ee6efa7e35cb0a64e9e444e3c12d134.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
