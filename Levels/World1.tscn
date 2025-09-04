@@ -1965,7 +1965,7 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 97/z_index = 0
 
 [sub_resource type="RectangleShape2D" id=14]
-extents = Vector2( 1220.5, 10 )
+extents = Vector2( 982.625, 33.5 )
 
 [sub_resource type="Animation" id=62]
 resource_name = "Enemy"
@@ -2252,7 +2252,7 @@ position = Vector2( 2, 1 )
 script = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="GameOverZone"]
-position = Vector2( 522.5, 370 )
+position = Vector2( 395.625, 416 )
 shape = SubResource( 14 )
 
 [node name="Sun" type="Sprite" parent="."]
@@ -2337,7 +2337,7 @@ position = Vector2( 79, 174 )
 texture = ExtResource( 15 )
 
 [node name="SpaceRock3" type="Sprite" parent="."]
-position = Vector2( 590, 140 )
+position = Vector2( 590, 141 )
 texture = ExtResource( 15 )
 
 [node name="Item6" parent="." instance=ExtResource( 9 )]
@@ -2489,6 +2489,14 @@ script = ExtResource( 23 )
 position = Vector2( 824, 134 )
 shape = SubResource( 64 )
 
+[node name="GameOverZone2" type="Area2D" parent="."]
+position = Vector2( 2, 1 )
+script = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameOverZone2"]
+position = Vector2( 1989, 111 )
+shape = SubResource( 14 )
+
 [connection signal="body_entered" from="GameOverZone" to="GameOverZone" method="_on_GameOverZone_body_entered"]
 [connection signal="body_entered" from="Enemy/KillingPlayerZone" to="Enemy/KillingPlayerZone" method="_on_KillingPlayerZone_body_entered"]
 [connection signal="body_entered" from="Enemy2/KillingPlayerZone" to="Enemy2/KillingPlayerZone" method="_on_KillingPlayerZone_body_entered"]
@@ -2497,3 +2505,4 @@ shape = SubResource( 64 )
 [connection signal="body_entered" from="Enemy5/KillingPlayerZone" to="Enemy5/KillingPlayerZone" method="_on_KillingPlayerZone_body_entered"]
 [connection signal="body_entered" from="Enemy6/KillingPlayerZone" to="Enemy6/KillingPlayerZone" method="_on_KillingPlayerZone_body_entered"]
 [connection signal="body_entered" from="Enemy7/KillingPlayerZone" to="Enemy7/KillingPlayerZone" method="_on_KillingPlayerZone_body_entered"]
+[connection signal="body_entered" from="GameOverZone2" to="GameOverZone2" method="_on_GameOverZone_body_entered"]

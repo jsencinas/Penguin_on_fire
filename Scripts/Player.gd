@@ -35,5 +35,7 @@ func _physics_process(delta):
 		World1.JumpSound.play() 
 	
 	movement = move_and_slide(movement, Vector2(0,-1))
-
+	
+func bounce():
+	movement.y = -400   # o el valor que uses para el salto
 
